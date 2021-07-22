@@ -106,7 +106,7 @@
 		<button
 		 type="button"
 		 class="button otcbutton" 
-		 onclick="alert('Hello')">
+		 >
 		 OTC HandBook
 		 </button>
 	</div>

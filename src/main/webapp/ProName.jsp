@@ -13,30 +13,6 @@
 body {
  font-family: Arial;
 }
-.button {
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.otcbutton {
-  background-color: #FFFF29;
-  color: black;
-  border: 2px solid black;
-  padding: 10px 15px;
-  font-size:20px
-}
-
-.otccenter {
-  display:flex;
-  justify-content: center;
-  align-items:center;
-  margin-top:200px; 
-}
 
 .searchcenter {
   display:flex;
@@ -128,11 +104,17 @@ form.search button:hover {
 </head>
 <body style="background-color:#000033;">
 <%@ include file="home.html" %>
-	<div class="otccenter">
-		<button
-		 type="button"
-		 class="button otcbutton" 
-		 onclick="alert('Hello')">
+
+	<div style="display:flex;
+		  justify-content: center;
+		  align-items:center;
+		  margin-top:200px; ">
+		<button style="background-color: #FFFF29;
+			  color: black;
+			  border: 2px solid black;
+			  padding: 10px 15px;
+			  font-size:20px;
+			  border-radius: 10px;">
 		 OTC HandBook
 		 </button>
 	</div>

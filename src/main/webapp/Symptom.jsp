@@ -13,31 +13,6 @@
 body {
  font-family: Arial;
 }
-.button {
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.otcbutton {
-  background-color: #FFFF29;
-  color: black;
-  border: 2px solid black;
-  padding: 10px 15px;
-  font-size:20px
-}
-
-.otccenter {
-  display:flex;
-  justify-content: center;
-  align-items:center;
-  margin-top:200px; 
-}
-
 .searchcenter {
   display:flex;
   justify-content: center;
@@ -89,6 +64,8 @@ form.search button:hover {
   font-size:20px;
   display: inline-block;
   border-radius: 10px;
+  width: 200px;
+  height:60px;
 }
 
 .symptom1 {
@@ -103,14 +80,6 @@ form.search button:hover {
  
  
 }
-.center1 {
-  display:flex;
-  justify-content: center;
-  align-items:center;
- 
-  
-}
-
 .symptom:hover {
   background-color: #008CBA;
   color: white;
@@ -121,39 +90,47 @@ form.search button:hover {
  justify-content: center;
  align-items:center;
  margin-top:20px;
-}
+} 
 
 
 </style>
 </head>
 <body style="background-color:#000033;">
 <%@ include file="home.html" %>
-	<div class="otccenter">
-		<button
-		 type="button"
-		 class="button otcbutton" 
-		 onclick="alert('Hello')">
+
+	<div style="display:flex;
+		  justify-content: center;
+		  align-items:center;
+		  margin-top:200px; ">
+		<button style="background-color: #FFFF29;
+			  color: black;
+			  border: 2px solid black;
+			  padding: 10px 15px;
+			  font-size:20px;
+			  border-radius: 10px;">
 		 OTC HandBook
 		 </button>
 	</div>
 	
 	<div class="searchcenter">	
-	<form class="search" style="margin:auto;max-width:400px"  action="/action_page.php">
-	<input type="text"  placeholder="Symptom.." name="search2">
-	<button type="submit"><i class="fa fa-search"></i></button>
-	</form>
-</div>
+		<form class="search" action="/action_page.php">
+		<input type="text"  placeholder="Symptom.." name="search2">
+		<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+	</div>
 	
-	<div class="center1">
+	<div style=" display:flex;
+		  justify-content: center;
+		  align-items:center;">
 		<button 
 			class="symptom symptom1" 
 			onclick="document.location='http://localhost:8080/OTCHandBook/ConnectDB.jsp'">
-			Symptom 1
+			Allergies
 		</button>
 		<button 
 			class="symptom symptom2" 
 			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
-			Symptom 2
+			Common Cold
 		</button>
 	</div>
 	
@@ -161,25 +138,25 @@ form.search button:hover {
 		<button 
 			class="symptom symptom1" 
 			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
-			Symptom 3
+			Diarrhea
 		</button>
 		<button 
 			class="symptom symptom2" 
 			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
-			Symptom 4
+			Constipation
 		</button>
 	</div>
 	
-		<div class="center2">
+	<div class="center2">
 		<button 
 			class="symptom symptom1" 
 			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
-			Symptom 5
+			Upset Stomach
 		</button>
 		<button 
 			class="symptom symptom2" 
 			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
-			Symptom 6
+			Eye irritation
 		</button>
 	</div>
 	
