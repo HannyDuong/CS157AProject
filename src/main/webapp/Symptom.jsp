@@ -101,7 +101,7 @@ form.search button:hover {
 	<div style="display:flex;
 		  justify-content: center;
 		  align-items:center;
-		  margin-top:200px; ">
+		  margin-top:100px; ">
 		<button style="background-color: #FFFF29;
 			  color: black;
 			  border: 2px solid black;
@@ -124,7 +124,7 @@ form.search button:hover {
 		  align-items:center;">
 		<button 
 			class="symptom symptom1" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/ConnectDB.jsp'">
+			onclick="document.location='http://localhost:8080/OTCHandBook/Allergy.jsp'">
 			Allergies
 		</button>
 		<button 
