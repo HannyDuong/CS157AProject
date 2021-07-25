@@ -1,3 +1,5 @@
+<%@ page import="java.sql.*" %>
+<%@ page import="java.sql.DriverManager" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -5,7 +7,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>OTC HAND Book</title>
+<title>Symptom</title>
 </head>
 
 <head>
@@ -27,7 +29,7 @@ form.search input[type=text]{
   font-size: 20px;
   border: 1px solid grey;
   float: left;
-  width: 300px;
+  width: 350px;
   background: #f1f1f1;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -96,25 +98,18 @@ form.search button:hover {
 </style>
 </head>
 <body style="background-color:#000033;">
-<%@ include file="home.html" %>
+<%@ include file="/home.html" %>
 
 	<div style="display:flex;
-		  justify-content: center;
-		  align-items:center;
-		  margin-top:100px; ">
-		<button style="background-color: #FFFF29;
-			  color: black;
-			  border: 2px solid black;
-			  padding: 10px 15px;
-			  font-size:20px;
-			  border-radius: 10px;">
-		 OTC HandBook
-		 </button>
+	  justify-content: center;
+	  align-items:center;
+	  margin-top:100px; ">
+	<h1 style="color:yellow; font-size:50px">OTC HandBook </h1>
 	</div>
 	
 	<div class="searchcenter">	
-		<form class="search" action="/action_page.php">
-		<input type="text"  placeholder="Symptom.." name="search2">
+		<form class="search" action="SearchSymptom.jsp" method="GET">
+		<input type="text"  placeholder="Symptom.." name="Symptom" required>
 		<button type="submit"><i class="fa fa-search"></i></button>
 		</form>
 	</div>
@@ -129,7 +124,7 @@ form.search button:hover {
 		</button>
 		<button 
 			class="symptom symptom2" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
+			onclick="document.location='http://localhost:8080/OTCHandBook/CommonCold.jsp'">
 			Common Cold
 		</button>
 	</div>
@@ -137,12 +132,12 @@ form.search button:hover {
 	<div class="center2">
 		<button 
 			class="symptom symptom1" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
+			onclick="document.location='http://localhost:8080/OTCHandBook/Diarrhea.jsp'">
 			Diarrhea
 		</button>
 		<button 
 			class="symptom symptom2" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
+			onclick="document.location='http://localhost:8080/OTCHandBook/Constipation.jsp'">
 			Constipation
 		</button>
 	</div>
@@ -150,23 +145,20 @@ form.search button:hover {
 	<div class="center2">
 		<button 
 			class="symptom symptom1" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
+			onclick="document.location='http://localhost:8080/OTCHandBook/UpsetStomach.jsp'">
 			Upset Stomach
 		</button>
 		<button 
 			class="symptom symptom2" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
+			onclick="document.location='http://localhost:8080/OTCHandBook/Eye.jsp'">
 			Eye irritation
 		</button>
 	</div>
 	
-	
-	
-	
-	
-	
-	
-	
-	
+
+ <div style="margin-top:100px">
+ </div> 	
+
+
 </body>
 </html>

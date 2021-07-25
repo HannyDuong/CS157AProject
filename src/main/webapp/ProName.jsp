@@ -5,7 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>OTC HAND Book</title>
+<title>Product Name</title>
 </head>
 
 <head>
@@ -104,24 +104,16 @@ form.search button:hover {
 </head>
 <body style="background-color:#000033;">
 <%@ include file="home.html" %>
-
-	<div style="display:flex;
-		  justify-content: center;
-		  align-items:center;
-		  margin-top:200px; ">
-		<button style="background-color: #FFFF29;
-			  color: black;
-			  border: 2px solid black;
-			  padding: 10px 15px;
-			  font-size:20px;
-			  border-radius: 10px;">
-		 OTC HandBook
-		 </button>
-	</div>
+<div style="display:flex;
+	  justify-content: center;
+	  align-items:center;
+	  margin-top:100px; ">
+	<h1 style="color:yellow; font-size:50px">OTC HandBook </h1>
+</div>
 	
-	<div class="searchcenter">	
+<div class="searchcenter">	
 	<form class="search" style="margin:auto;max-width:400px"  action="/action_page.php">
-	<input type="text"  placeholder="Symptom.." name="search2">
+	<input type="text"  placeholder="Product Name.." name="search2">
 	<button type="submit"><i class="fa fa-search"></i></button>
 	</form>
 </div>
