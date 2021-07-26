@@ -74,12 +74,12 @@ body {
 	<div class="center1">
 		<button 
 			class="symptom symptom1" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
+			onclick="document.location='http://localhost:8080/OTCHandBook/CategoryA.jsp'">
 			Allergy and Sinus
 		</button>
 		<button 
 			class="symptom symptom2" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
+			onclick="document.location='http://localhost:8080/OTCHandBook/CategoryD.jsp'">
 			Digestive Health
 		</button>
 	</div>
@@ -87,12 +87,12 @@ body {
 	<div class="center2">
 		<button 
 			class="symptom symptom1" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
+			onclick="document.location='http://localhost:8080/OTCHandBook/CategoryC.jsp'">
 			Cough and Cold
 		</button>
 		<button 
 			class="symptom symptom2" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
+			onclick="document.location='http://localhost:8080/OTCHandBook/CategoryE.jsp'">
 			Ear Care
 		</button>
 	</div>
@@ -100,12 +100,12 @@ body {
 		<div class="center2">
 		<button 
 			class="symptom symptom1" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
+			onclick="document.location='http://localhost:8080/OTCHandBook/CategoryI.jsp'">
 			Eye Care
 		</button>
 		<button 
 			class="symptom symptom2" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
+			onclick="document.location='http://localhost:8080/OTCHandBook/CategoryF.jsp'">
 			Foot Care
 		</button>
 	</div>

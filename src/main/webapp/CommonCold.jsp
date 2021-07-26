@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Diarrhea</title>
+<title>CommonCold</title>
 </head>
 <body>
 <%@ include file="Symptom.jsp" %>
