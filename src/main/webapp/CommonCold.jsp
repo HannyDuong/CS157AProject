@@ -6,7 +6,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<<<<<<< HEAD
 <title>Common Cold</title>
+=======
+<title>CommonCold</title>
+>>>>>>> 3e0e462e14bd16496b8c9382712f7b48f15d48fd
 </head>
 <body>
 <%@ include file="Symptom.jsp" %>

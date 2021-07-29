@@ -1,5 +1,8 @@
+<%@ page import="java.sql.*" %>
+<%@ page import="java.sql.DriverManager" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +13,7 @@
 
 <head>
 <style>
+
 body {
  font-family: Arial;
 }
@@ -20,19 +24,17 @@ body {
   align-items:center;
   margin-top:20px; 
   margin-bottom:20px;
- 
 }
 
-form.search input[type=text]{
+form.search input[type=text] {
   padding: 10px;
   font-size: 20px;
   border: 1px solid grey;
   float: left;
-  width: 300px;
+  width: 350px;
   background: #f1f1f1;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  
 }
 
 form.search button {
@@ -52,8 +54,8 @@ form.search button {
 form.search::after {
  content: "";
  clear: both;
-
 }
+
 form.search button:hover {
   background: #0b7dda;
 }
@@ -65,6 +67,8 @@ form.search button:hover {
   font-size:20px;
   display: inline-block;
   border-radius: 10px;
+  width: 200px;
+  height:60px;
 }
 
 .symptom1 {
@@ -76,15 +80,6 @@ form.search button:hover {
   background-color: #FFE6CC;
   border: 2px solid #D79B00;
   margin-left: 30px;
- 
- 
-}
-.center1 {
-  display:flex;
-  justify-content: center;
-  align-items:center;
- 
-  
 }
 
 .symptom:hover {
@@ -97,66 +92,70 @@ form.search button:hover {
  justify-content: center;
  align-items:center;
  margin-top:20px;
-}
-
+} 
 
 </style>
 </head>
 <body style="background-color:#000033;">
-<%@ include file="home.html" %>
-<div style="display:flex;
+<%@ include file="/home.html" %>
+
+	<div style="display:flex;
 	  justify-content: center;
 	  align-items:center;
 	  margin-top:100px; ">
-	<h1 style="color:yellow; font-size:50px">OTC HandBook </h1>
-</div>
+	<h1 style="color:yellow; font-size:50px">OTC HandBook</h1>
+	</div>
 	
-<div class="searchcenter">	
-	<form class="search" style="margin:auto;max-width:400px"  action="/action_page.php">
-	<input type="text"  placeholder="Product Name.." name="search2">
-	<button type="submit"><i class="fa fa-search"></i></button>
-	</form>
-</div>
+	<div class="searchcenter">	
+		<form class="search" action="SearchProName.jsp" method="GET">
+		<input type="text"  placeholder="Product Name..." name="Product Name" required>
+		<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+	</div>
 	
-	<div class="center1">
+	<div style=" display:flex;
+		  justify-content: center;
+		  align-items:center;">
 		<button 
 			class="symptom symptom1" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
-			Name 1
+			onclick="document.location='http://localhost:8080/OTCHandBook/Allegra.jsp'">
+			Allegra
 		</button>
 		<button 
 			class="symptom symptom2" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
-			Name 2
+			onclick="document.location='http://localhost:8080/OTCHandBook/Benadryl.jsp'">
+			Benadryl
 		</button>
 	</div>
 	
 	<div class="center2">
 		<button 
 			class="symptom symptom1" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
-			Name 3
+			onclick="document.location='http://localhost:8080/OTCHandBook/Fungix.jsp'">
+			Fungix
 		</button>
 		<button 
 			class="symptom symptom2" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
-			Name 4
+			onclick="document.location='http://localhost:8080/OTCHandBook/Pepcid.jsp'">
+			Pepcid
 		</button>
 	</div>
 	
-		<div class="center2">
+	<div class="center2">
 		<button 
 			class="symptom symptom1" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
-			Name 5
+			onclick="document.location='http://localhost:8080/OTCHandBook/Vicks.jsp'">
+			Vicks
 		</button>
 		<button 
 			class="symptom symptom2" 
-			onclick="document.location='http://localhost:8080/OTCHandBook/hello.html'">
-			Name 6
+			onclick="document.location='http://localhost:8080/OTCHandBook/Neosporin.jsp'">
+			Neosporin
 		</button>
 	</div>
 	
+ <div style="margin-top:100px">
+ </div> 	
 
 </body>
 </html>
