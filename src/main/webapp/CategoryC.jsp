@@ -17,7 +17,7 @@
  try 
  {
 	 Class.forName("oracle.jdbc.driver.OracleDriver");
-	 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "oracle");
+	 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "abc123");
 	 System.out.println("CategoryCoughAndCold Connects to DB");
 	
 	 String CategoryCoughAndCold = "SELECT D.DID, D.GenericName, D.BrandName, D.Form, D.Description, D.Notes FROM Drug D WHERE D.Category = 'CoughAndCold'";

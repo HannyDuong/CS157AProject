@@ -17,10 +17,10 @@
  out.println("<html><body>"); 
  try {
 	 Class.forName("oracle.jdbc.driver.OracleDriver");
-	 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "oracle");
+	 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "abc123");
 	 System.out.println("Neosporin Connects to DB");
 	
-	 String neo = "SELECT D.DID, D.GenericName, D.Description, D.Form FROM Drug D WHERE D.BrandName LIKE '%Neosporin%' ";
+	 String neo = "SELECT D.DID, D.BrandName, D.Description, D.Form FROM Drug D WHERE D.BrandName LIKE '%Neosporin%' ";
 	 PreparedStatement ps = con.prepareStatement(neo);
 	 ResultSet res = ps.executeQuery();
 	 out.println("<div style=margin-top:100px>");

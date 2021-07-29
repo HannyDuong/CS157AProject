@@ -6,12 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<<<<<<< HEAD
-<title>Common Cold</title>
-=======
 <title>CommonCold</title>
->>>>>>> 3e0e462e14bd16496b8c9382712f7b48f15d48fd
-</head>
 <body>
 <%@ include file="Symptom.jsp" %>
  <% 
@@ -20,7 +15,7 @@
  out.println("<html><body>"); 
  try {
 	 Class.forName("oracle.jdbc.driver.OracleDriver");
-	 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "oracle");
+	 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "abc123");
 	 System.out.println("CommonCold Connects to DB");
 	
 	 String cold = "SELECT D.DID, D.GenericName, D.Description FROM Drug D WHERE D.DID IN (SELECT T.DID FROM Treatment T WHERE T.SYMID IN (SELECT S.SYMID FROM Symptom S WHERE S.Name like '%cold%')) ORDER BY D.DID DESC ";

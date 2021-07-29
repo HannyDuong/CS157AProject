@@ -16,10 +16,10 @@
  out.println("<html><body>"); 
  try {
 	 Class.forName("oracle.jdbc.driver.OracleDriver");
-	 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "oracle");
+	 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "abc123");
 	 System.out.println("Vicks Connects to DB");
 	
-	 String vicks = "SELECT D.DID, D.GenericName, D.Description, D.Form FROM Drug D WHERE D.BrandName LIKE '%Vicks%' ";
+	 String vicks = "SELECT D.DID, D.BrandName, D.Description, D.Form FROM Drug D WHERE D.BrandName LIKE '%Vicks%' ";
 	 PreparedStatement ps = con.prepareStatement(vicks);
 	 ResultSet res = ps.executeQuery();
 	 out.println("<div style=margin-top:100px>");

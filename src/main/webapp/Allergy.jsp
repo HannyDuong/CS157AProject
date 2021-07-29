@@ -16,7 +16,7 @@
  out.println("<html><body>"); 
  try {
 	 Class.forName("oracle.jdbc.driver.OracleDriver");
-	 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "oracle");
+	 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "abc123");
 	 System.out.println("Allergy Connects to DB");
 	 //Statement sta = con.createStatement();
 	// String allergy = " SELECT D.BrandName, D.Description FROM Drug D WHERE D.DID IN (SELECT T.DID FROM Treatment T WHERE T.SYMID IN  (SELECT S.SYMID FROM Symptom S WHERE S.Name = 'allergies')) ORDER BY D.DID DESC ";

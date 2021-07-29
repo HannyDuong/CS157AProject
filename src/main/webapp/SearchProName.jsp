@@ -1,4 +1,4 @@
-<%@page import="com.sun.jdi.Value"%>
+
 <%@ page import="java.sql.*" %>
 <%@ page import="java.sql.DriverManager" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -23,13 +23,13 @@
  
  try {
 	 Class.forName("oracle.jdbc.driver.OracleDriver");
-	 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "oracle");
+	 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "abc123");
 	 System.out.println("Search Product Name Connect to DB");
 	 Statement sta = con.createStatement();
 	 Statement sta2 = con.createStatement();
 	 Statement sta3 = con.createStatement();
 
-	 String pn = "SELECT D.DID, D.GenericName, D.Description, D.Form FROM Drug D WHERE D.BrandName LIKE '%"+ product +"%' ";
+	 String pn = "SELECT D.DID, D.BrandName, D.Description, D.Form FROM Drug D WHERE D.BrandName LIKE '%"+ product +"%' ";
 	 PreparedStatement ps = con.prepareStatement(pn);
 	 ResultSet res = ps.executeQuery(); 
 	 
