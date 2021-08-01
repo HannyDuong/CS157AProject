@@ -1,8 +1,8 @@
 # CS157AProject
-OTC Medicine Handbook
-#Tools
-Install Eclipse Java EE
-Install Tomcat 9.0
+OTC Medicine Handbook  
+#Tools  
+Install Eclipse Java EE  
+Install Tomcat 9.0  
 
 + After installing the docker, store Oracle DB in your docker using command  
      docker pull epiclabs/docker-oracle-xe-11g
