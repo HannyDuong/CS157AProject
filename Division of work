@@ -1,0 +1,33 @@
+ER Diagram
+Ha: Drawing the ER Diagram
+Minli: Edit the ER Diagram
+Ben: Edit the ER Diagram
+
+---------------------------
+Create Relations
+Minli: Drugs and Symptom
+Ben:   Stores and Review
+Ha: Insert to sql
+
+--------------------------
+Implementation
+Ha: set up the project  
+  : implement search by symptom section  
+Minli: implement search by category section  
+Ben: implement search by category section  
+------------------------------
+PPT
+Minli, Ha , Ben
+----------------------------
+Final Report
+Minli: Goal and Description  
+       Implementation Details	
+       Conclusion	
+       
+Ha: Application Requirements and Architecture
+    Entity Relationship (ER) Data Model	
+    Major Design Decisions	
+    Demonstration of System Run	
+    
+Ben: Database Design
+    
