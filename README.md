@@ -29,7 +29,7 @@ Install Tomcat 9.0
 + Choose Run As -> run on server -> Select Tomcat v9.0 
 + Click Finish
 
-#Fix The superclass "javax.servlet.http.HttpServlet" was not found on the Java Build Path
+#Fix The superclass "javax.servlet.http.HttpServlet" was not found on the Java Build Path  
 +paste servlet jar file to lib under src/main/webapp/WEB-INF/lib 
 [jar_files.zip](https://github.com/HannyDuong/CS157AProject/files/6819318/jar_files.zip)
 
